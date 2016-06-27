@@ -1,0 +1,16 @@
+.carousel-caption {
+   align-items: center;
+    right: 20%;
+    left: 20%;
+    color: #2c2c2c;
+    text-shadow: none;
+    text-align: left;
+    font-size: 1.6em;
+    line-height: 1.6;
+}
+.well  p {
+ text-indent: 2em;
+}
+.well h3{
+ text-align: center;
+}

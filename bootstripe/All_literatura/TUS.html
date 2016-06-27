@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../simple-sidebar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- navbar navbar-inverse Top Menu Bar  -->
+
+<nav class="navbar navbar-static-top navbar-inverse" style="background-color: #172131;">
+
+    <div class="container-fluid">
+
+        <!-- Logo-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../index01.html" class="navbar-brand">Інформаційна культура</a>
+        </div>
+
+        <!-- Menu Items-->
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" type="button" data-toggle="modal" data-target="#popUpWindow">Авторизация</a></li>
+            <li><a href="#" type="button" data-toggle="modal" data-target="#popUpWindowForSignUp">Регистрация</a></li>
+        </ul>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+
+                <li><a href="Liter.html">Литература</a></li>
+                <li><a href="../All_labor/Labor.html">Лабораторные</a></li>
+
+                <!--Dropdown menu -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Задания<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Для самостоятельной работы</a></li>
+                        <li><a href="#">Для индивидуальной работы</a></li>
+                        <li><a href="#">Для промежуточного оцениваня</a></li>
+                        <li><a href="#">Для контрольного оценивания</a></li>
+
+                    </ul>
+                <li><a href="../Forum.html">Наш форум</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- sign up Modal-->
+<div class="modal fade" id="popUpWindowForSignUp">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- header-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3>Регистрация</h3>
+            </div>
+
+            <!-- body(form)-->
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Login">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Пароль">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Подтвердить пароль">
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Выберите курс обучения:</label>
+                        <select class="form-control" id="sel1">
+                            <option>1 курс</option>
+                            <option>2 курс</option>
+                            <option>3 курс</option>
+                            <option>4 курс</option>
+                            <option>5 курс</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <!-- button-->
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-block">Подтвердить</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Login Modal-->
+<div class="modal fade" id="popUpWindow">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- header-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3>Авторизация</h3>
+            </div>
+
+            <!-- body(form)-->
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Пароль">
+                    </div>
+                </form>
+            </div>
+
+            <!-- button-->
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-block">Подтвердить</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Main content -->
+<div class="container">
+    <div class="row">
+        <div class="container">
+            <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                <li >
+                    <a href="Navigation.html">Навигация <span class="badge">6</span></a>
+                </li>
+                <li class="active">
+                    <a href="TUS.html">Теория управления судна<span class="badge">9</span></a>
+                </li>
+                <li>
+                    <a href="Meteorologia.html">Метеорология<span class="badge">8</span></a>
+                </li>
+                <li >
+                    <a href="MMD.html">Менеджмент морских ресурсов<span class="badge">12</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 ">
+            <div class="thumbnail">
+                <img src="../../images/TUS.jpg" alt=""/>
+                <div class="caption">
+                    <h3><a href="#">Лекция №1</a></h3>
+                    <p>Тема: «ВВЕДЕНИЕ В ТЕОРИЮ УПРАВЛЕНИЯ»</p>
+
+                    <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 ">
+            <div class="thumbnail">
+                <img src="../../images/TUS.jpg" alt=""/>
+                <div class="caption">
+                    <h3><a href="#">Лекция №2 </a></h3>
+                    <p>Тема: «Маневренность судна»</p>
+
+                    <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <div class="thumbnail">
+                <img src="../../images/TUS.jpg" alt=""/>
+                <div class="caption">
+                    <h3><a href="#">Лекция №3</a></h3>
+                    <p>Тема: «Постановка и съемка судна с якоря и бочек»</p>
+
+                    <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <div class="thumbnail">
+                <img src="../../images/TUS.jpg" alt=""/>
+                <div class="caption">
+                    <h3><a href="#">Лекция №4</a></h3>
+                    <p>Тема: «Управление судном при выполнении швартовных операций»</p>
+                    <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 ">
+            <div class="thumbnail">
+                <img src="../../images/TUS.jpg" alt=""/>
+                <div class="caption">
+                    <h3><a href="#">Лекция №5</a></h3>
+                    <p>Тема: «Управление и маневрирование судном в штормовых условиях»</p>
+
+                    <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 ">
+            <div class="thumbnail">
+                <img src="../../images/TUS.jpg" alt=""/>
+                <div class="caption">
+                    <h3><a href="#">Лекция №6</a></h3>
+                    <p>Тема: «Маневрирование судном при плавании в узкости и на мелководье»</p>
+                    <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>
